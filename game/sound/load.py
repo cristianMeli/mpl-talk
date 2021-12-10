@@ -12,7 +12,7 @@ def hello():
 
 def download_sound(sound):
     http = PoolManager()
-    url = f"https://www.google.com/search?q={sound}&tbm=isch"
+    url = f"http://www.google.com/search?q={sound}&tbm=isch"
     try:
         response = http.request("GET", url)
         logger.error("Download successfull")
