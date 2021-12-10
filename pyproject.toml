@@ -1,9 +1,12 @@
 [tool.poetry]
 name = "mpl_talk"
-version = "0.1.0"
+version = "0.1.1"
 description = "A library example for Modules, Packages and Libaries talk"
 authors = ["Cristian Vera <cristian.vera@mercadolibre.com>"]
 readme = "README.md"
+packages = [
+    { include = "game"},
+]
 
 [tool.poetry.dependencies]
 python = "^3.6"
